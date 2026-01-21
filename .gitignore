@@ -1,0 +1,17 @@
+# Cypress secrets i artifacts
+cypress/fixtures/credentials.json
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Env
+.env
+.DS_Store
+
+# IDE
+.vscode/settings.json
+.idea/
