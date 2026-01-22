@@ -3,7 +3,7 @@ describe('My-Factura: Login > Consumer Create', () => {
     // 1. Login
     cy.visit('https://dev-cc.miticondev.net/#/admin/entity/1/dashboard');
 
-    const firstName = 'Marko';
+    const firstName = 'Markoo';
     const lastName = 'Asdasd';
     const fullName = `${firstName} ${lastName}`;
     const iban = 'DE' + Math.floor(Math.random() * 10000000000);  // DE + 10 cifara

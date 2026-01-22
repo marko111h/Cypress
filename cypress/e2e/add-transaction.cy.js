@@ -24,14 +24,14 @@ describe('Consumer Cockpit - Add Transaction', () => {
     cy.wait(2000);
     
     // 4. Amount
-    cy.get('#mcc-fi-ctrlTransactionAmount').type('100.50');
+    cy.get('#mcc-fi-ctrlTransactionAmount').type('110.50');
     
     // 5. Description
     cy.get('#mcc-fi-ctrlDescription').type('Test transaction description');
     
     // 6. Due date = današnji
     cy.get('#mcc-fi-input-ctrlPaymentDueDate').click();
-    cy.get('div[ngbdatepickerdayview]').contains('21').click();
+    cy.get('div[ngbdatepickerdayview]').contains('22').click();
 
       // 3. Potvrdi (ako treba)
    // cy.get('.datepicker-close').click();  // ILI auto zatvori

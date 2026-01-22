@@ -1,0 +1,10 @@
+{
+  "searches": [
+    { "field": "Consumer name", "value": "Milos", "selector": "#search-input-name" },
+    { "field": "IBAN", "value": "DE58665502323232265132", "selector": "#search-input-iban" },
+    { "field": "Consumer Internal ID", "value": "970105", "selector": "#search-internal-id" },
+    { "field": "Email", "value": "marko.dj111@gmail.com", "selector": "#search-email" },
+    { "field": "Company name", "value": "Fit+ marko", "selector": "#search-company" },
+    {"field": "Address", "value": "Karadjordja Petrovica", "selector": "#search-Address"}
+  ]
+}

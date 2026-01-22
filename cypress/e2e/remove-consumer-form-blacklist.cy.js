@@ -20,7 +20,7 @@ describe('Consumer Cockpit - Add Transaction', () => {
 
     cy.contains('button', 'Confirm').click();
 
-   ooo
+
 
   });
 });
