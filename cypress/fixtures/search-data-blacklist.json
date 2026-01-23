@@ -1,0 +1,9 @@
+{
+  "searches": [
+    { "field": "Consumer name", "value": "dragan Heumos", "selector": "#search-input-name" },
+    { "field": "IBAN", "value": "DE14246134235245246", "selector": "#search-input-iban" },
+    { "field": "Consumer Internal ID", "value": "963905", "selector": "#search-internal-id" },
+    { "field": "Email", "value": "goran.mitic@gerniks.com", "selector": "#search-email" },
+    { "field": "Company name", "value": "Fit+", "selector": "#search-company" }
+  ]
+}
