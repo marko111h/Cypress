@@ -1,12 +1,16 @@
+import { faker } from '@faker-js/faker';
+
+
 describe('My-Factura: Login > Consumer Create', () => {
   it('Login i create Person consumera', () => {
     // 1. Login
     cy.visit('https://dev-cc.miticondev.net/#/admin/entity/1/dashboard');
 
-    const firstName = 'Markoo';
-    const lastName = 'Asdasd';
+    const firstName = faker.person.firstName();
+    const lastName = faker.person.lastName();
     const fullName = `${firstName} ${lastName}`;
-    const iban = 'DE' + Math.floor(Math.random() * 10000000000);  // DE + 10 cifara
+    const iban = 'DE' + Math.floor(Math.random() * 10000000000);
+
 
     cy.fixture('credentials.json').then((creds) => {
       cy.get('input[placeholder*="Username"]').clear().type(creds.admin.username);
@@ -19,7 +23,7 @@ describe('My-Factura: Login > Consumer Create', () => {
     // 2. Consumer 360 Smart Search
     cy.visit('https://dev-cc.miticondev.net/#/entity/40261/consumers/smart-search-box');
 
-    cy.wait(12000);
+    cy.wait(10000);
     
     cy.get('.mat-focus-indicator').first().click();  // Otvori meni (1 element)
     cy.get('#consumer_360_consumer_cockpit-button-addConsumer').click();  // Tačno dugme

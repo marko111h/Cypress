@@ -7,7 +7,7 @@ describe('Consumer Cockpit - Add Transaction', () => {
       cy.get('input[placeholder*="Password"]').clear().type(creds.admin.password);
     });
     cy.get('#loginBtn').click();
-    cy.wait(12000);
+    cy.wait(9000);
     cy.url().should('include', 'dashboard');
 
         // 2. Consumer 360 Smart Search
@@ -31,7 +31,8 @@ describe('Consumer Cockpit - Add Transaction', () => {
     
     // 6. Due date = današnji
     cy.get('#mcc-fi-input-ctrlPaymentDueDate').click();
-    cy.get('div[ngbdatepickerdayview]').contains('22').click();
+    const todayDay = new Date().getDate().toString(); 
+    cy.get('div[ngbdatepickerdayview]').contains(todayDay).click();
 
       // 3. Potvrdi (ako treba)
    // cy.get('.datepicker-close').click();  // ILI auto zatvori
