@@ -1,7 +1,7 @@
 describe('My-Factura: Searching consumer by IBAN', () => {
   it('Login and Searching consumer by IBAN', () => {
     // 1. Login
-    cy.visit('https://dev-cc.miticondev.net/#/admin/entity/1/dashboard');
+    cy.visit('https://dev-cc.dev.gerniks.net/#/admin/entity/1/dashboard');
 
     cy.fixture('credentials.json').then((creds) => {
       cy.get('input[placeholder*="Username"]').clear().type(creds.admin.username);

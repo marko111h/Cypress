@@ -14,6 +14,6 @@
   "type": "commonjs",
   "devDependencies": {
     "@faker-js/faker": "^10.2.0",
-    "cypress": "^15.9.0"
+    "cypress": "^15.11.0"
   }
 }

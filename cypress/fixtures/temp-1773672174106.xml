@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02 camt.053.001.02.xsd">
+	<BkToCstmrStmt>
+		<GrpHdr>
+			<MsgId>95cb1c7b-254307806-7005151-20200305</MsgId>
+			<CreDtTm>2020-06-05T07:00:51Z</CreDtTm>
+			<MsgPgntn>
+				<PgNb>1</PgNb>
+				<LastPgInd>true</LastPgInd>
+			</MsgPgntn>
+		</GrpHdr>
+		<Stmt>
+			<Id>stmt-1773672174106-15mij8p1n2m</Id><!--/Kod mora biti unique -->
+			<ElctrncSeqNb>000000000</ElctrncSeqNb>
+			<CreDtTm>2026-02-09T07:00:51Z</CreDtTm><!--//Danasnji datum -->
+			<Acct>
+				<Id>
+					<IBAN>DE52701694100002965682</IBAN><!--//IBAN Miticona -->
+				</Id>
+				<Ccy>EUR</Ccy>
+				<Svcr>
+					<FinInstnId>
+						<BIC>GDERTYU9KDJ</BIC>
+					</FinInstnId>
+				</Svcr>
+			</Acct>
+			<Bal>
+				<Tp>
+					<CdOrPrtry>
+						<Cd>PRCD</Cd>
+					</CdOrPrtry>
+				</Tp>
+				<Amt Ccy="EUR">14087.23</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Dt>
+					<Dt>2020-06-05</Dt>
+				</Dt>
+			</Bal>
+			<Bal>
+				<Tp>
+					<CdOrPrtry>
+						<Cd>CLBD</Cd>
+					</CdOrPrtry>
+				</Tp>
+				<Amt Ccy="EUR">14034.23</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Dt>
+					<Dt>2020-08-21</Dt>
+				</Dt>
+			</Bal>
+			<Ntry>
+				<Amt Ccy="EUR">31.00</Amt> <!--//Original amount -->
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2026-02-09</Dt><!--//Danasnji datum -->
+				</BookgDt>
+				<ValDt>
+					<Dt>2020-06-02</Dt>
+				</ValDt>
+				<AcctSvcrRef>2021010518042956000</AcctSvcrRef>
+				<BkTxCd/>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<EndToEndId>1</EndToEndId>
+						</Refs>
+						<BkTxCd>
+							<Prtry>
+								<Cd>NRTI+166+9262+902</Cd> <!--//166 payment -->
+							</Prtry>
+						</BkTxCd>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Goran</Nm>
+							</Dbtr>
+							<DbtrAcct>
+								<Id>
+									<IBAN>DE213432524524524123</IBAN><!--//Iban Consumera -->
+								</Id>
+							</DbtrAcct>
+							<Cdtr>
+								<Nm>Miticon d.o.o.</Nm>
+							</Cdtr>
+                            <CdtrAcct>
+                                <Id>
+                                <IBAN>DE52701694100002965682</IBAN>
+                                </Id>
+                             </CdtrAcct>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<Othr>
+										<Id>NOTPROVIDED</Id>
+									</Othr>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>2026-419129</Ustrd> <!--//Matching ID transakcije -->
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>GUTSCHRIFT</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<Amt Ccy="EUR">27.00</Amt> <!--//Original amount -->
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2026-02-09</Dt> <!--//Danasnji datum -->
+				</BookgDt>
+				<ValDt>
+					<Dt>2020-06-02</Dt>
+				</ValDt>
+				<AcctSvcrRef>2021010518042956000</AcctSvcrRef>
+				<BkTxCd/>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<EndToEndId>1</EndToEndId>
+						</Refs>
+						<BkTxCd>
+							<Prtry>
+								<Cd>NRTI+166+9262+902</Cd> <!--//166 payment -->
+							</Prtry>
+						</BkTxCd>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Goran</Nm>
+							</Dbtr>
+							<DbtrAcct>
+								<Id>
+									<IBAN>DE32642624624624</IBAN><!--//Iban Consumera -->
+								</Id>
+							</DbtrAcct>
+							<Cdtr>
+								<Nm>Miticon d.o.o.</Nm>
+							</Cdtr>
+                            <CdtrAcct>
+                                <Id>
+                                <IBAN>DE52701694100002965682</IBAN>
+                                </Id>
+                             </CdtrAcct>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<Othr>
+										<Id>NOTPROVIDED</Id>
+									</Othr>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>2026-419110</Ustrd><!--//Matching ID transakcije -->
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>GUTSCHRIFT</AddtlNtryInf>
+			</Ntry>
+		</Stmt>
+	</BkToCstmrStmt>
+</Document>

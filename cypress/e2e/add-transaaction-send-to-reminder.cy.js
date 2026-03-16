@@ -1,6 +1,6 @@
 describe('Consumer Cockpit - Add Transaction', () => {
   it('more_vert > Transactions > Add', () => {
-    cy.visit('https://dev-cc.miticondev.net/#/admin/entity/1/dashboard');
+    cy.visit('https://dev-cc.dev.gerniks.net/#/admin/entity/1/dashboard');
 
   cy.fixture('credentials.json').then((creds) => {
       cy.get('input[placeholder*="Username"]').clear().type(creds.admin.username);
@@ -11,8 +11,7 @@ describe('Consumer Cockpit - Add Transaction', () => {
     cy.url().should('include', 'dashboard');
 
         // 2. Consumer 360 Smart Search
-    cy.visit('https://dev-cc.miticondev.net/#/entity/40261/consumers/smart-search-box');
-
+    cy.visit('https://dev-cc.dev.gerniks.net/#/entity/40261/consumers/smart-search-box');
     cy.wait(10000);
     // 1. More_vert ikona (Actions)
     cy.get('mat-icon.material-icons').contains('more_vert').click();
