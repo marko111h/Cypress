@@ -8,5 +8,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {},
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 30000,
+    screenshotOnRunFailure: false,
   },
 });

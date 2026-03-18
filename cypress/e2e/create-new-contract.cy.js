@@ -38,7 +38,7 @@ describe('Consumer Cockpit - Create New Contract', () => {
 
     // Nacin placanja
     cy.get('.mat-mdc-select-placeholder').click({ force: true });
-    cy.get('.mdc-list-item__primary-text').contains('Direct-debit').click();
+    cy.get('.mdc-list-item__primary-text').contains(' Direct-debit ').click({ force: true });
     cy.get('button[matsteppernext]:visible').first().click({ force: true });
 
     // Potvrdi kreiranje

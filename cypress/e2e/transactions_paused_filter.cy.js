@@ -39,9 +39,6 @@ describe('Transactions Overview - Paused Filter', () => {
       cy.get('.mdc-list-item__primary-text').contains(option).click();
       cy.wait(1000);
 
-      cy.get('.cdk-overlay-backdrop.cdk-overlay-transparent-backdrop').click({ force: true });
-      cy.wait(500);
-
       cy.get('.mdc-button__label').contains('Filter').click({ force: true });
       cy.wait(3000);
 
