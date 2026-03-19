@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:camt.053.001.02 camt.053.001.02.xsd">
+	<BkToCstmrStmt>
+		<GrpHdr>
+			<MsgId>msg-return-1773926016250</MsgId>
+			<CreDtTm>2026-03-19T13:13:36Z</CreDtTm>
+			<MsgPgntn>
+				<PgNb>1</PgNb>
+				<LastPgInd>true</LastPgInd>
+			</MsgPgntn>
+		</GrpHdr>
+		<Stmt>
+			<Id>stmt-return-1773926016250</Id>/Kod mora biti unique
+			<ElctrncSeqNb>000000000</ElctrncSeqNb>
+			<CreDtTm>2026-03-19T13:13:36Z</CreDtTm>//Danasnji datum
+			<Acct>
+				<Id>
+					<IBAN>DE52701694100002965682</IBAN>//IBAN Miticona
+				</Id>
+				<Ccy>EUR</Ccy>
+				<Svcr>
+					<FinInstnId>
+						<BIC>GDERTYU9KDJ</BIC>
+					</FinInstnId>
+				</Svcr>S
+			</Acct>
+			<Bal>
+				<Tp>
+					<CdOrPrtry>
+						<Cd>PRCD</Cd>
+					</CdOrPrtry>
+				</Tp>
+				<Amt Ccy="EUR">14087.23</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Dt>
+					<Dt>2020-06-05</Dt>
+				</Dt>
+			</Bal>
+			<Bal>
+				<Tp>
+					<CdOrPrtry>
+						<Cd>CLBD</Cd>
+					</CdOrPrtry>
+				</Tp>
+				<Amt Ccy="EUR">14034.23</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Dt>
+					<Dt>2020-08-21</Dt>
+				</Dt>
+			</Bal>
+			<Ntry>
+                <Amt Ccy="EUR">36.00</Amt>//Original amount uvecan za 5 evra(Exported amount + 5 evra)
+                <CdtDbtInd>DBIT</CdtDbtInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2026-02-12</Dt>//Danasnji datum
+                </BookgDt>
+                <ValDt>
+                    <Dt>2020-06-02</Dt>
+                </ValDt>
+                <AcctSvcrRef>ref-return-1773926016250</AcctSvcrRef>
+                <BkTxCd/>
+                <NtryDtls>
+                    <TxDtls>
+                        <Refs>
+                            <EndToEndId>1</EndToEndId>
+                            <MndtId>17500-0000007901-001</MndtId>
+                        </Refs>
+                        <BkTxCd>
+                            <Prtry>
+                                <Cd>NRTI+109+00931+000</Cd>//109 Return
+                            </Prtry>
+                        </BkTxCd>
+                        <RltdPties>
+                            <Dbtr>
+                                <Nm>Meaghan Goldner</Nm>//Account owner
+                            </Dbtr>
+                            <DbtrAcct><Id><IBAN>DE50719549984523551910</IBAN>//Iban mog Consumera
+                                </Id>
+                            </DbtrAcct>
+                            <Cdtr>
+                                <Nm>Miticon d.o.o</Nm>
+                            </Cdtr>
+                            <CdtrAcct>
+                                <Id>
+                                     <IBAN>DE52701694100002965682</IBAN>
+                                </Id>
+                            </CdtrAcct>
+                        </RltdPties>
+                        <RmtInf>
+                            <Ustrd>Retoure SEPA Lastschrift vom 02.03.2020, Rueckgabegrund: MD01 Lastschriftwiderspruch durch den Zahlungspflichtigen SVWZ: RETURN/REFUND, </Ustrd>//Kod se menja(MD01)
+                            <Ustrd> -d test API 2026-435083, Anmeldegebuehr 01.03.2020 EREF: 49 ENTG: 3,00 EUR ENTGELT EINGEHENDE RÜCKLAS</Ustrd>//Menja se desc. ustrd tag iz export fajla
+                            <Ustrd>TSCHRIFT ORG.BETR.: 35,00 EUR IBAN: DE50719549984523551910
+                            </Ustrd>//Menja se iznos i IBAN
+                        </RmtInf>
+                        <RtrInf>
+                            <Rsn>
+                                <Cd>MD01</Cd>
+                            </Rsn>
+                        </RtrInf>
+                    </TxDtls>
+                </NtryDtls>
+                <AddtlNtryInf>RETOURE</AddtlNtryInf>//Return
+            </Ntry>
+		</Stmt>
+	</BkToCstmrStmt>
+</Document>
